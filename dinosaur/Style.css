@@ -1,0 +1,82 @@
+/* body{
+  background-color: blue;
+} */
+.dinosaur {
+  margin: 250px auto;
+  height: 100px;
+  width: 100px;
+  background-image: url("./dinosaur3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: roll 0.75s steps(1) infinite;
+}
+
+@keyframes roll {
+  0% {
+    background-position: 100;
+    /* First frame */
+  }
+
+  14.5% {
+    background-position: -100px;
+    /* Third frame */
+  }
+  27% {
+    background-position: -200px;
+  }
+  39.5% {
+    background-position: -300px;
+    /* Show fourth frame */
+  }
+
+  60% {
+    background-position: -500px;
+    /* Show fifth frame */
+  }
+
+  75% {
+    background-position: -600px;
+    /* Show sixth frame */
+  }
+
+  100% {
+    background-position: -700px;
+    /* Show seventh frame */
+  }
+}
+
+.loading {
+  margin: -460px auto;
+  height: 500px;
+  width: 600px;
+  background-image: url("./loadingBar3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: load 6s steps(1) infinite;
+}
+
+@keyframes load {
+  0% {
+    background-position: 0;
+    /* Show first frame */
+  }
+20% {
+    background-position: -1800px;
+    /* Reset to the first frame */
+  }
+  40%{
+    background-position: -4200px;
+  }
+  60%{
+    background-position: -5400px;
+  }
+  80%{
+    background-position: -9000px;
+  }
+  
+  100%{
+ background-position: -15000px;
+    
+  }
+  
+}

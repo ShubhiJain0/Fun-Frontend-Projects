@@ -1,0 +1,91 @@
+body{
+  background: #f3f3f3;
+}
+
+.dog-img{
+  width: 500px;
+  height: 500px;
+  background-image: url('./Dog2.png');
+  margin: 25px 25px;
+  animation: walk 1s steps(1) infinite;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@keyframes walk {
+
+  0%{
+    background-position: 0;
+  }
+  10%{
+    background-position: -500px;
+  }
+  20%{
+    background-position: -1000px;
+  }
+  30%{
+    background-position: -1500px;
+  }
+  40%{
+    background-position: -2000px;
+  }
+  50%{
+    background-position: -2500px;
+  }
+  60%{
+    background-position: -3000px;
+  }
+  70%{
+    background-position: -3500px;
+  }
+  80%{
+    background-position: -4000px;
+  }
+  90%{
+    background-position: -4500px;
+  }
+  100%{
+    background-position: -5000px;
+  }
+}
+
+.dog-container{
+  animation: side 5s steps(1) infinite;
+  margin-left: 25px;
+}
+
+@keyframes side {
+  0%{
+    margin-left: 0;
+  }
+  10%{
+    margin-left: +140px;
+  }
+  20%{
+    margin-left: +240px;
+  }
+  30%{
+    margin-left: +320px;
+  }
+  40%{
+    margin-left: 400px;
+  }
+  50%{
+    margin-left: +480px;
+  }
+  60%{
+    margin-left: +520px;
+  }
+  70%{
+    margin-left: +660px;
+  }
+  80%{
+    margin-left: +700px;
+  }
+  90%{
+    margin-left: +820px;
+  }
+  100%{
+    margin-left: -820px;
+  }
+}

@@ -1,0 +1,61 @@
+body{
+  background: #414046;
+}
+
+.parent{
+  margin: 250px auto;
+  width: 270px;
+  height: 190px;
+  max-height: 630px;
+  max-width: 270px;
+  overflow: hidden;
+   position: relative;
+}
+
+.volcano{
+  position: absolute;
+  min-width: 300px;
+  min-height: 610px;
+  background-image: url('./40660.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: errupt 3s steps(1) infinite;
+}
+
+@keyframes errupt {
+  0%{
+    background-position: 0 0;
+  }  
+  11.11%{
+    background-position: -290px 0;
+  }
+  22.22%{
+  background-position: -600px 0;
+  }
+  33.33%{
+    background-position: 0 -170px;
+  }
+  44.44%{
+    background-position: -290px -170px;
+  }
+  55.55%{
+    background-position: -600px -170px;
+  }
+  66.66%{
+    background-position: 0px -410px;
+  }
+  77.77%{
+  background-position: -290px -370px;
+  margin-top: -10px;
+    
+  }
+  88.88%{
+  background-position: -610px -380px;
+  min-width: 400px;
+  margin-top: +5px;
+}
+
+  99.99%{
+  background-position: 0 0;
+  }
+}

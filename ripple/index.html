@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      width: 100vw;
+      height: 100vh;
+      background-color: cadetblue;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .outerCircle{
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: ripple 5s 1s steps(5) linear infinite;
+    }
+    .innerCircle{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: black;
+      position: absolute;
+    }
+    @keyframes ripple {
+      0%{
+        
+      }
+      10%{
+        
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="outerCircle">
+      <div class="innerCircle">
+
+      </div>
+    </div>
+  </div>
+  <script>
+
+  </script>
+</body>
+</html>

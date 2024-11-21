@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Web page</title>
+</head>
+<body>
+  <nav class="nav-bar">
+    <div class="title">
+      Web creatives
+    </div>
+<div class="left-parent">
+    <div class="left">
+      <a>About</a>
+      <a>login</a>
+      <a>Sign up</a>
+    </div>
+    <div>
+      <a href="" id="menu"><i class="fa-solid fa-bars"></i></a>
+      <div class="dropdown hide">
+        <div class="logo">
+      <i class="fa-solid fa-xmark"></i></div>
+      <a>About</a>
+      <a>login</a>
+      <a>Sign up</a>
+    </div>
+    </div>
+  </div>
+  </nav>
+  <hero class="form">
+    <div class="content">
+      <div>
+        <label for="name">Name</label>
+      <input type="text" id="name">
+
+      </div>
+      
+<div>
+    <label for="email">email</label>
+      <input type="text" id="email">
+</div>      
+  
+      <button>Sign up</button>
+    </div>
+  </hero>
+  <script>
+    let dropdown = document.querySelector(".dropdown");
+    let exit = document.querySelector(".logo");
+    let menu = document.querySelector("#menu");
+    menu.onclick=function(e){
+      e.preventDefault();
+     console.log("hello");
+      dropdown.classList.toggle("hide")
+    }
+    exit.onclick=function(e){
+      e.preventDefault();
+     
+      dropdown.classList.toggle("hide")
+    }
+  </script>
+</body>
+</html>

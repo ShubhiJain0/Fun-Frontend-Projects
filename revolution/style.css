@@ -1,0 +1,51 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 50vh;
+}
+
+.sun{
+  width: 150px;
+  height: 150px;
+  background: rgb(202, 202, 63);
+  border-radius: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.earth{
+  width: 60px;
+  height: 60px;
+  background: blue;
+  border-radius: 100%;
+  position: absolute;
+  top: 80px;
+  left: 80px; 
+  animation: revolve 5s linear infinite;
+  z-index: 2;
+  transform-origin: 300px 200px;
+}
+
+@keyframes revolve {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.moon{
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 100%;
+  top: 30px;
+  left: 30px;
+  transform-origin: 40px 0px ;
+  animation: revolve 2s linear infinite;
+  position: absolute;
+  
+}

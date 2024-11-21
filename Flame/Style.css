@@ -1,0 +1,87 @@
+body{
+  
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #130802;
+  flex-direction: column;
+}
+.text{
+  color: white;
+}
+.container{
+  width: 100px;
+  height: 120px;
+  overflow: hidden;
+  position: relative;
+  overflow: hidden;
+  background: #000;
+ 
+}
+.flame{
+  width: 400px;
+  height: 120px;
+  background-image: url('./flame.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: flame 6s steps(1) infinite;
+}
+
+@keyframes flame {
+  0%{
+    background-position: 0 0;
+  }
+  6%{
+    background-position: -80px 0;
+  }
+  12%{
+    background-position: -150px 0;
+  }
+  18%{
+    background-position: -230px 0;
+  }
+  
+  24%{
+    background-position: -300px 0;
+  }
+  30%{
+    background-position: 0 -120px;
+  }
+  36%{
+    background-position: -75px -130px;
+  }
+  42%{
+    background-position: -150px -130px;
+  }
+  48%{
+    background-position: -225px -130px;
+  }
+  54%{
+    background-position: -300px -130px;
+  }
+  
+  60%{
+    background-position: 0 -260px;
+  }
+  66%{
+    background-position: -80px -260px;
+  }
+  72%{
+  background-position: -160px -260px;
+  }
+  78%{
+    background-position: -230px -260px;
+  }
+  84%{
+    background-position: -300px -260px;
+  }
+  
+  90%{
+    background-position: -300px -235px;
+  }  
+  100%{
+    background-position:-300px -230px;
+  }
+}

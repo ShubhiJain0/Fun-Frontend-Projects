@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      width: 100vw;
+      height: 100vh;
+      background-color: black;
+    }
+    .raindrop{
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      animation: fall 10s linear infinite;
+      width: 40px;
+      align-items: center;
+      justify-self: start;
+      height: 40px;
+    }
+
+    .upperPart{
+      width: 10px;
+      height: 20px;
+      border-right:1px solid white;
+      position: absolute;
+      z-index: 1;
+    }
+    .bottomPart{
+      width: 30px;
+      height: 1px;
+      border: 1px solid white;
+      border-radius: 50%;
+      top: 20px;
+      left: 10px;
+      position: absolute;
+      z-index: 0;
+      opacity: 0;
+      animation: ripple 1s 8.75s ease-out;
+    }
+    @keyframes fall {
+     0%{
+      transform: translateY(0);
+     }
+      95%{
+      transform: translateY(80vh);
+     }
+     100%{
+      transform: translatey(80vh);
+     } 
+    }
+    @keyframes ripple {
+      0%{
+        opacity: 0;
+      }
+      10%{
+        opacity: 0;
+      }
+      20%{
+        opacity: 0;
+      }
+      30%{
+        opacity: 0;
+      }
+      40%{
+        opacity: 0;
+      }
+      50%{
+        opacity: 0;
+      }
+      60%{
+        opacity: 0;
+      }
+      70%{
+        opacity: 0;
+      }
+      80%{
+        opacity: 0;
+      }
+      
+      90%{
+        opacity: 0;
+      }
+      95%{
+        opacity: 1;
+        transform: scale(2);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="raindrop">
+      <div class="upperPart"></div>
+      <div class="bottomPart">
+
+      </div>
+    </div>
+  </div>
+  <script>
+    // let container = document.querySelector(".container");
+    // const createRain=function(){
+      
+    // let height =`${Math.floor(Math.random()*50)}`;
+    //   let raindrop = document.createElement("div");
+    // raindrop.classList.add("raindrop");
+    //   raindrop.style.left=`${Math.floor(Math.random()*100)}em`;
+    //   raindrop.style.height=height*2+"px"
+
+    //   raindrop.style.width=height*2+"px"
+    // let upperPart = document.createElement("div");
+    // upperPart.classList.add("upperPart");
+    // upperPart.style.height=height+"px";
+
+    // let bottomPart= document.createElement("div");
+    // bottomPart.classList.add("bottomPart");
+    //   bottomPart.style.width=`${Math.floor(Math.random()*50)+10}px`
+    // bottomPart.style.top=height+"px";
+
+    // raindrop.appendChild(upperPart);
+    // raindrop.appendChild(bottomPart);
+    // container.appendChild(raindrop);
+
+    // setTimeout(()=>{
+    //   raindrop.remove()
+    // },9000)
+    // }
+    // setInterval(createRain,50);
+  </script>
+</body>
+</html>

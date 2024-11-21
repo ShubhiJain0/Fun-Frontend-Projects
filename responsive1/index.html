@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav_bar">
+    <a href=""><h1>web creatives</h1></a>
+    
+    <div class="sub_nav">
+      <a href="" id="burger"><i class="ri-menu-line"></i></a>
+      
+        <li> <a href="">About</a></li>
+        <li><a href="">connect</a> </li>
+        <li><a href="">courses</a></li>
+        <li><button id="sign-up"><a href="" >sign up</a></button> </li>
+        
+    </div>
+
+    
+  </nav>
+  <div class="dropdown">
+      <li> <a href="">About</a></li>
+        <li><a href="">connect</a> </li>
+        <li><a href="">courses</a></li>
+        <li><button id="sign-up"><a href="" >sign up</a></button> </li>
+        
+    </div>  
+    
+<!-- hero -->
+<hero>
+  <h1>lorem</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, alias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, alias.</p>
+</hero>
+ <script>
+    let signUpButton = document.querySelector("#burger");
+    let dropdown = document.querySelector(".dropdown");
+
+    signUpButton.onclick = function(e) {
+      e.preventDefault();
+      // Toggle the dropdown's visibility
+      if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+        dropdown.style.display = 'block'; // Show the dropdown
+      } else {
+        dropdown.style.display = 'none';  // Hide the dropdown
+      }
+    };
+  </script>
+</body>
+</html>

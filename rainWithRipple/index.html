@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      background-color: black;
+      margin: 0;
+      padding: 0;
+    }
+    .container{
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+    .rain{
+      width: 100px;
+      height: 110px;
+      position: absolute;
+      animation: fall 7s linear infinite;
+    }
+    @keyframes fall {
+      
+      to{
+        transform: translateY(100vh);
+      }
+    }
+    
+    .raindrop{
+      width: 10px;
+      height: 100px;
+      border-right: 2px solid white;
+      position: absolute;
+    }
+    
+    .ripple{
+      left: -4px;
+      width: 35px;
+      height: 5px;
+      border-radius: 50%;
+      border: 1px solid white;
+      position: absolute;
+      animation: rippleEff 7s ease-out infinite;
+      bottom: 0;
+    }
+    @keyframes rippleEff {
+      0%{
+        transform: scale(0);
+        display: none;
+      }
+      50%{
+      transform: scale(0);
+        display: none;
+       }
+       
+      75%{
+      transform: scale(0);
+        display: none;
+       }
+       100%{
+      transform: scale(2);
+        
+       }
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="rain">
+      <div class="raindrop">
+
+      </div>
+      <div class="ripple">
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

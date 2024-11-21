@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container{
+      width: 512px;
+      height: 512px;
+      border: 1px solid black;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .wave{
+      width: 100%;
+      height: 100%;
+      background-color: #40B3DB;
+      top: calc(100%);
+      position: absolute;
+      animation: up 2s linear infinite;
+    }
+
+    .wave::before{
+      content: '';
+      background-image: url('./pngwing.com.png');
+      position: absolute;
+      width: 100%;
+      height: 512px;
+      top: -170px;
+      animation: wavy 1s linear infinite;
+    }
+
+    @keyframes wavy {
+      from{
+        background-position-x:0 ;
+      }
+      to{
+      background-position-x:+512px ;
+        
+      }
+    }
+
+    @keyframes up {
+      to{
+        top: 0;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div>
+    <div class="container">
+      <div class="wave">
+
+    </div>
+    </div>
+    
+  </div>
+</body>
+</html>

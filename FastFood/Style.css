@@ -1,0 +1,64 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+.container{
+  width: 260px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.fastfood{
+  background-image: url('./foodss.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 800px;
+  animation: food 10s steps(6) infinite;
+}
+
+@keyframes food {
+  0%{
+    background-position: 0;
+  }
+  10%{
+    background-position: -290px 0;
+  }
+  
+  20%{
+    background-position: -580px 0;
+  }
+  30%{
+    background-position: 0 -270px;
+  }
+  
+  40%{
+    background-position: -290px -250px;
+
+  }
+  50%{
+    background-position: -580px -250px;
+  }
+  60%{
+    background-position: 0 -520px;
+  }
+  70%{
+    background-position: -290px -520px;
+  }
+  80%{
+    background-position: -580px -520px;
+  }
+  90%{
+    background-position: -580px -250px;
+  }
+  95%{
+  background-position: 0 -270px;   
+  }
+  100%{
+    background-position: 0 0; 
+  }
+}

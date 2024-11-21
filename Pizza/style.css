@@ -1,0 +1,202 @@
+.box{
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  position: relative;
+  background-color: rgb(202, 158, 61);
+}
+
+
+.slice1{
+  background-image: url('pizzaa-transformed.png');
+  background-size: contain;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 150px;
+  position: absolute;
+  margin-left: 70px;
+  animation: liftUp1 7s steps(1) infinite;
+  animation-timing-function: linear;
+  margin-top: 30px;
+}
+
+.slice2{
+margin-left: 70px;
+margin-top: 30px;
+  background-image: url('pizzaa-transformed.png');
+  background-size: contain;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 150px;
+  transform: rotate(50deg);
+  position: absolute;
+  top: 2px;
+  left: 13px; 
+  animation: liftUp2 7s infinite;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+}
+
+.slice3{
+  margin-top: 30px;
+  margin-left: 70px;
+  background-image: url('pizzaa-transformed.png');
+  background-size: contain;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 150px;
+  transform: rotate(100deg);
+  position: absolute;
+  top: 15px;
+  left: 13px;
+  
+  animation: liftUp3 7s infinite;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+}
+
+.slice4{
+  margin-top: 30px;
+  margin-left: 70px;
+  background-image: url('pizzaa-transformed.png');
+  background-size: contain;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 150px;
+  transform: rotate(150deg);
+  position: absolute;
+  top: 23px;
+  left: 5px;
+  
+  animation: liftUp4 7s steps(1) infinite;
+  animation-timing-function: linear;
+  animation-delay: 3s;
+}
+
+.slice5{
+  margin-top: 30px;
+  margin-left: 70px;
+  background-image: url('pizzaa-transformed.png');
+  background-size: contain;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 150px;
+  transform: rotate(205deg);
+  position: absolute;
+  top: 20px;
+  left: -5px;
+  
+  animation: liftUp5 7s steps(1) infinite;
+  animation-timing-function: linear;
+  animation-delay: 4s;
+}
+.slice6{
+  margin-top: 30px;
+ margin-left: 70px;
+  background-image: url('pizzaa-transformed.png');
+  background-size: contain;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 150px;
+  transform: rotate(260deg);
+  position: absolute;
+  top: 13px;
+  left: -15px; 
+  
+  animation: liftUp6 7s infinite;
+  animation-timing-function: linear;
+  animation-delay: 5s;
+}
+.slice7{
+  margin-top: 30px;
+  margin-left: 70px;
+  background-image: url('pizzaa-transformed.png');
+  background-size: contain;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 150px;
+  transform: rotate(310deg);
+  position: absolute;
+  left: -15px; 
+  
+  animation: liftUp7 7s steps(1) infinite;
+  animation-timing-function: linear;
+  animation-delay: 6s;
+}
+
+@keyframes liftUp1 {
+  0% {
+    transform: translateY(0);
+  }
+  5% {
+    transform: translateY(-15px);
+  }
+  10%{
+    transform: translateY(0);
+  }
+}
+
+@keyframes liftUp2 {
+  0% {
+    transform: translateY(0) translateX(0) rotate(50deg);
+  }
+  5% {
+    transform: translateX(25px) translateY(-10px) rotate(50deg);
+  }
+  10%{
+     transform: translateY(0) translateX(0) rotate(50deg);
+
+  }
+}
+
+@keyframes liftUp3 {
+   0%, 10% {
+    transform: translateY(0) translateX(0) rotate(100deg);
+  }
+  5% {
+    transform: translateX(25px) translateY(-1px) rotate(100deg);
+  }
+}
+
+@keyframes liftUp4 {
+  0%, 10% {
+    transform: translateY(0) rotate(150deg) translateX(0);
+  }
+  5% {
+    transform: translateY(30px) translateX(5px) rotate(150deg);
+  }
+}
+
+@keyframes liftUp5 {
+  0%, 10% {
+    transform: translateY(0) rotate(205deg) translateX(0);
+  }
+  5% {
+    transform: translateY(15px) translateX(-5px) rotate(205deg);
+  }
+}
+
+@keyframes liftUp6 {
+  0%, 10% {
+    transform: translateY(0) rotate(260deg) translateX(0);
+  }
+  5% {
+    transform: translateX(-15px) rotate(260deg) ;
+  }
+}
+
+@keyframes liftUp7 {
+  0%, 10% {
+    transform: translateY(0) translateX(0) rotate(310deg);
+  }
+  5% {
+    transform: rotate(310deg)  translateY(-15px) ;
+  }
+}
